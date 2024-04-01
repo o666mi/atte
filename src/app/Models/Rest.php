@@ -12,4 +12,8 @@ class Rest extends Model
     protected $guarded =[
         'id'
     ];
+    public function attendance()
+    {
+        return $this->belongTo(attendance::class)
+    }
 }

@@ -12,4 +12,12 @@ class Attendence extends Model
     protected $guarded =[
         'id'
     ];
+    public function user()
+    {
+        return $this->belongTo(user::class)
+    }
+    public function rest()
+    {
+        return $this->hasOne(rest::class);
+    }
 }
