@@ -2,16 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Http\Request;
 
 class RegisteredUserController extends Controller
 {
-    public function create(){
+    public function create()
+    {
         return view('register');
     }
-    public function store(Request $request){
-        $user = new user;
-        return redirect('/register')
+    public function store(Request $request)
+    {
+        return redirect()->route('/attendance');
     }
 }
