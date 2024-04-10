@@ -14,5 +14,6 @@ class RegisteredUserController extends Controller
     public function store(Request $request)
     {
         return redirect()->route('/attendance');
+        return view('/');
     }
 }
