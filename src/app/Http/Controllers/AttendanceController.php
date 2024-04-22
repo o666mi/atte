@@ -9,11 +9,22 @@ use App\Models\Rest;
 class AttendanceController extends Controller
 {
     public function index(){
+        if (Auth::check()) {
+            return view('/')
+        } else {
+            return view('auth/login')
+        }
         $work = Attendance::all();
-        return view('/');
     }
     public function startWork(){
-        echo "startWork";
+        $user = Auth::user();
+
+        $oldTimestamp = Timestamp::where('user_id', $user->id)->latest()->first();
+        if ($oldTimestamp) {
+            $oldTimestampPunchIn = new Carbon($oldTimestamp->punchIn);
+            $oldTimestampDay = $oldTimestampPunchIn->startOfDay();
+        }
+
     }
     public function endWork(){
         echo "endWork";

@@ -9,11 +9,13 @@ class RegisteredUserController extends Controller
 {
     public function create()
     {
-        return view('register');
+        $users = Author::all();
+        return view('register', ['authors' => $authors]);
     }
     public function store(Request $request)
     {
-        return redirect()->route('/attendance');
+        $user = $request->only(['name', 'email', 'password']);
+        User::create($users);
         return view('/');
     }
 }

@@ -39,12 +39,19 @@
                         @enderror
                     </p>
                 </div>
-                <input class="form__btn" type="submit" value="ログイン">
-                <div class="form__group-login">
-                    <label class="form__label" for="login">アカウントをお持ちでない方はこちらから</label>
-                </div>
-                <input class="form__btn-register" type="submit" value="会員登録">
+                <input class="form__btn-login" type="submit" value="ログイン">
+                <div class="form__group-register">
+                    <label class="form__label" for="register">アカウントをお持ちでない方はこちらから</label>
+                    <a class=register href="/register">会員登録</a>
             </form>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <a class="footer__logo" href="">
+                Atte,inc.
+            </a>
+        </div>
+    </footer>
 </body>

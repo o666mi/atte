@@ -21,7 +21,7 @@
             <div class="register-form__heading">
                 <h2>会員登録</h2>
             </div>
-            <form class="form" action="/store" method="post">
+            <form class="form" action="/register" method="post">
                 @csrf
                 <div class="form__group">
                     <input class="form__input" type="text" name="name" id="name" placeholder="名前">
@@ -58,11 +58,12 @@
                 <input class="form__btn-register" type="submit" value="会員登録">
                 <div class="form__group-login">
                     <label class="form__label" for="login">アカウントをお持ちの方はこちらから</label>
-                    <input class="form__btn-login" type="submit" value="ログイン">
+                    <a class=login href="/login">ログイン</a>
                 </div>
             </form>
         </div>
     </main>
+
     <footer class="footer">
         <div class="footer__inner">
             <a class="footer__logo" href="">
