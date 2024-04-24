@@ -8,9 +8,85 @@
     max-width: 1230px;
 }
 
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header__logo {
     color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+}
+
+.header-utilities nav {
+    width: 18%;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+}
+
+.heder-nav__link {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.header-nav__button {
+    border: none;
+    background: transparent;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.attendance-form__content {
+    background: #f2f2f2;
+}
+
+.attendance-form__heading {
+    text-align: center;
+}
+
+.attendance__form {
+    display: flex;
+    justify-content: center;
+}
+
+.rest__form {
+    display: flex;
+    justify-content: center;
+}
+
+.form__group {
+    color: #000;
+    margin: 15px;
+}
+
+.button,input {
+    width: 300px;
+    height: 100px;
+    border: none;
+    background: #fff;
+}
+
+.footer__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    text-align: center;
+}
+
+.footer__logo {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
 }

@@ -9,12 +9,7 @@ use App\Models\Rest;
 class AttendanceController extends Controller
 {
     public function index(){
-        if (Auth::check()) {
-            return view('/')
-        } else {
-            return view('auth/login')
-        }
-        $work = Attendance::all();
+     return view('index');
     }
     public function startWork(){
         $user = Auth::user();
