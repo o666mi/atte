@@ -16,20 +16,13 @@ class AttendanceController extends Controller
 
         $oldTimestamp = Timestamp::where('user_id', $user->id)->latest()->first();
         if ($oldTimestamp) {
-            $oldTimestampPunchIn = new Carbon($oldTimestamp->punchIn);
-            $oldTimestampDay = $oldTimestampPunchIn->startOfDay();
+            $oldTimestampStartWork = new Carbon($oldTimestamp->punchIn);
+            $oldTimestampDay = $oldTimestampStartWork->startOfDay();
         }
 
+        $entry->start_time
     }
-    public function endWork(){
-        echo "endWork";
-    }
-    public function startRest(){
-        echo "startRest";
-    }
-    public function endRest(){
-        echo "endRest";
-    }
+
     public function show(){
         return view('attendance');
     }

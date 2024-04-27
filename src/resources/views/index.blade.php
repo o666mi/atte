@@ -49,7 +49,7 @@
                 <form action="/attendance/end" method="post">
                 @csrf
                     <div class="form__group">
-                        <input type="button" id="btn2" value="勤務終了">
+                        <input type="button" id="btn2" value="勤務終了" disabled="disabled">
                     </div>
                 </form>
             </div>
@@ -57,13 +57,13 @@
                 <form action="/rest/start" method="post">
                     @csrf
                     <div class="form__group">
-                        <input type="button" id="btn3" value="休憩開始">
+                        <input type="button" id="btn3" value="休憩開始" disabled="disabled">
                     </div>
                 </form>
                 <form action="/rest/end" method="post">
                     @csrf
                     <div class="form__group">
-                        <input type="button" id="btn4" value="休憩終了">
+                        <input type="button" id="btn4" value="休憩終了" disabled="disabled">
                     </div>
                 </form>
             </div>
