@@ -12,8 +12,11 @@ class Rest extends Model
     protected $guarded =[
         'id'
     ];
+
+    protected $fillable = ['rest_start', 'rest_end'];
+    
     public function attendance()
     {
-        return $this->belongTo(attendance::class)
+        return $this->belongsTo(attendance::class);
     }
 }

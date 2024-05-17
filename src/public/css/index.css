@@ -75,7 +75,14 @@
     width: 300px;
     height: 100px;
     border: none;
-    background: #fff;
+    background:#fff;
+}
+
+.submit,button {
+    width: 300px;
+    height: 100px;
+    border: none;
+    background:#fff;
 }
 
 .footer__inner {

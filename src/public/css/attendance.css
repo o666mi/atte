@@ -47,6 +47,12 @@
     cursor: pointer;
 }
 
+.date-form__content {
+    background: #f2f2f2;
+    padding: 15px;
+}
+
+
 .footer__inner {
     margin: 0 auto;
     padding: 20px 15px;

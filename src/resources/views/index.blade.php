@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -43,27 +43,27 @@
                 <form action="/attendance/start" method="post">
                 @csrf
                     <div class="form__group">
-                        <input type="button" id="btn1" value="勤務開始">
+                        <button type="submit" name="work_start" class="attendance_button" @if(isset($isWork_start)) disabled @endif>出勤開始</button>
                     </div>
                 </form>
                 <form action="/attendance/end" method="post">
                 @csrf
                     <div class="form__group">
-                        <input type="button" id="btn2" value="勤務終了" disabled="disabled">
+                        <button type="submit" name="work_end" class="attendance_button" @if(isset($isWork_end)) disabled @endif>勤務終了</button>
                     </div>
                 </form>
             </div>
             <div class="rest__form">
                 <form action="/rest/start" method="post">
-                    @csrf
+                @csrf
                     <div class="form__group">
-                        <input type="button" id="btn3" value="休憩開始" disabled="disabled">
+                        <button type="submit" name="rest_start" class="attendance_button" @if(isset($isRest_start)) disabled @endif>休憩開始</button>
                     </div>
                 </form>
                 <form action="/rest/end" method="post">
-                    @csrf
+                @csrf
                     <div class="form__group">
-                        <input type="button" id="btn4" value="休憩終了" disabled="disabled">
+                        <button type="submit" name="rest_end" class="attendance_button" @if(isset($isRest_end)) disabled @endif>休憩開始</button>
                     </div>
                 </form>
             </div>
