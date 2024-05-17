@@ -61,7 +61,7 @@
         <nav class="pager">
             <div class="pagination">
                 <a class="page-numbers" href=http://localhost/attendance><</a>
-                <span class="page-numbers__current">1</span>
+                <span  class="page-numbers current">1</span>
                 <a class="page-numbers" href="https://localhost/attendance/page/2">2</a>
                 <a class="page-numbers" href="https://localhost/attendance/page/3">3</a>
                 <a class="page-numbers" href="https://localhost/attendance/page/4">4</a>
