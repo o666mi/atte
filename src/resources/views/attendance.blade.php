@@ -52,7 +52,7 @@
             </tr>
             @foreach($attendances as $attendance)
             <tr class="attendance__row">
-                <td class="attendance__date">{{$attendance->userId}}</td>
+                <td class="attendance__date">{{$attendance->user->name}}</td>
                 <td class="attendance__date">{{$attendance->work_start}}</td>
                 <td class="attendance__date">{{$attendance->work_end}}</td>
             </tr>

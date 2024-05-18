@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -43,13 +43,13 @@ a<!DOCTYPE html>
                 <form action="/attendance/start" method="post">
                 @csrf
                     <div class="form__group">
-                        <button type="submit" name="work_start" class="attendance_button" @if(isset($isWork_start)) disabled @endif>出勤開始</button>
+                        <button type="submit" name="work_start" class="attendance_button" @if($isWork_start) disabled @endif>出勤開始</button>
                     </div>
                 </form>
                 <form action="/attendance/end" method="post">
                 @csrf
                     <div class="form__group">
-                        <button type="submit" name="work_end" class="attendance_button" @if(isset($isWork_end)) disabled @endif>勤務終了</button>
+                        <button type="submit" name="work_end" class="attendance_button" @if($isWork_end) disabled @endif>勤務終了</button>
                     </div>
                 </form>
             </div>
@@ -57,13 +57,13 @@ a<!DOCTYPE html>
                 <form action="/rest/start" method="post">
                 @csrf
                     <div class="form__group">
-                        <button type="submit" name="rest_start" class="attendance_button" @if(isset($isRest_start)) disabled @endif>休憩開始</button>
+                        <button type="submit" name="rest_start" class="attendance_button" @if($isRest_start) disabled @endif>休憩開始</button>
                     </div>
                 </form>
                 <form action="/rest/end" method="post">
                 @csrf
                     <div class="form__group">
-                        <button type="submit" name="rest_end" class="attendance_button" @if(isset($isRest_end)) disabled @endif>休憩開始</button>
+                        <button type="submit" name="rest_end" class="attendance_button" @if($isRest_end) disabled @endif>休憩開始</button>
                     </div>
                 </form>
             </div>
